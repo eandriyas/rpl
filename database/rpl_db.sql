@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 06, 2014 at 07:48 
+-- Generation Time: Oct 14, 2014 at 05:20 
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -47,24 +47,6 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
   `user_data` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `ci_sessions`
---
-
-INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
-('14b2bd573bbced2ce05a3269ebd7457b', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.132 Safari/537.36', 1400351365, 'a:2:{s:9:"user_data";s:0:"";s:7:"teacher";a:3:{s:5:"email";s:15:"andri@gmail.com";s:7:"id_guru";s:1:"1";s:9:"logged_in";b:1;}}'),
-('210d11b889768526b525ad20397ce8bc', '192.168.1.195', 'Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; CROSS A22 Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 M', 1402224346, ''),
-('35d8660772c9a409c18619af8e6e33aa', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36', 1400663612, 'a:2:{s:9:"user_data";s:0:"";s:7:"student";a:3:{s:5:"email";s:19:"andrihost@gmail.com";s:10:"id_student";s:2:"27";s:9:"logged_in";b:1;}}'),
-('3d1d945227103200508f819a3b90ec51', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36', 1400948680, ''),
-('47c815b2a304c829b79cd14d1567925b', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36', 1400657754, 'a:3:{s:9:"user_data";s:0:"";s:7:"teacher";a:3:{s:5:"email";s:19:"eandriyas@gmail.com";s:7:"id_guru";s:1:"6";s:9:"logged_in";b:1;}s:7:"student";a:3:{s:5:"email";s:19:"andrihost@gmail.com";s:10:"id_student";s:2:"27";s:9:"logged_in";b:1;}}'),
-('49781f8199a08fd1c300fd4a26ab1b31', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36', 1401078891, ''),
-('5eae192f6c443489511c55ee243aa669', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.120 Safari/537.36', 1412574248, 'a:2:{s:9:"user_data";s:0:"";s:7:"student";a:3:{s:5:"email";s:19:"andrihost@gmail.com";s:10:"id_student";s:2:"27";s:9:"logged_in";b:1;}}'),
-('63d960fcc045c2ef4cfc23136195ba36', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36', 1401202131, ''),
-('7b1e069e95daac4059beb9dcae8dc6dd', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36', 1405941000, 'a:2:{s:9:"user_data";s:0:"";s:7:"teacher";a:3:{s:5:"email";s:19:"eandriyas@gmail.com";s:7:"id_guru";s:1:"6";s:9:"logged_in";b:1;}}'),
-('b91ec2442a2eba776838496d595877dc', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.114 Safari/537.36', 1402407618, 'a:2:{s:9:"user_data";s:0:"";s:7:"student";a:3:{s:5:"email";s:19:"andrihost@gmail.com";s:10:"id_student";s:2:"27";s:9:"logged_in";b:1;}}'),
-('cb7063042515ddcbca1d7cc831e42a92', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.132 Safari/537.36', 1400332843, 'a:2:{s:7:"student";a:3:{s:5:"email";s:15:"admin@gmail.com";s:10:"id_student";s:2:"19";s:9:"logged_in";b:1;}s:7:"teacher";a:3:{s:5:"email";s:18:"andriyas@gmail.com";s:7:"id_guru";s:1:"3";s:9:"logged_in";b:1;}}'),
-('fb6a19af565354f4ee622148d06eb722', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36', 1400390215, '');
-
 -- --------------------------------------------------------
 
 --
@@ -94,14 +76,6 @@ CREATE TABLE IF NOT EXISTS `file_materi` (
   `file_name` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
---
--- Dumping data for table `file_materi`
---
-
-INSERT INTO `file_materi` (`id_fm`, `title`, `date_upload`, `description`, `id_mata_pelajaran`, `file_name`) VALUES
-(1, 'fisika 1', '2014-05-21', 'materi fisika 1', 7, 'ana_dua_a.doc'),
-(2, 'matematika', '2014-05-21', '', 7, 'ana.doc');
-
 -- --------------------------------------------------------
 
 --
@@ -114,30 +88,6 @@ CREATE TABLE IF NOT EXISTS `img_thumb` (
   `image_thumb` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=35 ;
 
---
--- Dumping data for table `img_thumb`
---
-
-INSERT INTO `img_thumb` (`id_img`, `image_asli`, `image_thumb`) VALUES
-(6, 'a', 'b'),
-(18, 'http://localhost/ci/RPL/ci_rpl/file/student/19/firefox-29.png', 'file/student/19/thumb243357781.png'),
-(19, 'http://localhost/ci/RPL/ci_rpl/file/student/19/2014-04-22-220738.jpg', 'file/student/19/thumb703283700.jpeg'),
-(20, 'http://localhost/ci/RPL/ci_rpl/file/student/19/2014-04-29-124415.jpg', 'file/student/19/thumb70122843.jpeg'),
-(21, 'http://localhost/ci/RPL/ci_rpl/file/student/19/2014-05-13-223232.jpg', 'file/student/19/thumb1492373290.jpeg'),
-(22, 'http://localhost/ci/RPL/ci_rpl/file/avatar3.png', 'file/avatar3.png'),
-(23, 'http://localhost/ci/RPL/ci_rpl/file/student/19/2014-04-22-220702.jpg', 'file/student/19/thumb2078692854.jpeg'),
-(24, 'http://localhost/ci/RPL/ci_rpl/file/student/19/2014-04-22-220535.jpg', 'file/student/19/thumb820351186.jpeg'),
-(25, 'http://localhost/ci/RPL/ci_rpl/file/student/19/2014-04-22-220640.jpg', 'file/student/19/thumb147918194.jpeg'),
-(26, 'http://localhost/ci/RPL/ci_rpl/file/student/19/2014-04-29-124415.jpg', 'file/student/19/thumb1085998061.jpeg'),
-(27, 'http://localhost/ci/RPL/ci_rpl/file/student/19/2014-04-22-221227.jpg', 'file/student/19/thumb617124276.jpeg'),
-(28, 'http://localhost/ci/RPL/ci_rpl/file/student/19/2014-05-13-223232.jpg', 'file/student/19/thumb819701534.jpeg'),
-(29, 'http://localhost/ci/RPL/ci_rpl/file/student/19/2014-04-22-220738.jpg', 'file/student/19/thumb1136323858.jpeg'),
-(30, 'http://localhost/ci/RPL/ci_rpl/file/student/19/qwer.png', 'file/student/19/thumb356225610.png'),
-(31, 'http://localhost/ci/RPL/ci_rpl/file/student/19/2014-04-22-220535.jpg', 'file/student/19/thumb958128247.jpeg'),
-(32, 'http://localhost/ci/RPL/ci_rpl/file/student/25/2014-04-25-101952.jpg', 'file/student/25/thumb734375193.jpeg'),
-(33, 'http://localhost/ci/RPL/ci_rpl/file/student/26/2014-04-25-101952.jpg', 'file/student/26/thumb1713888358.jpeg'),
-(34, 'http://localhost/ci/RPL/ci_rpl/file/student/27/avatar3.png', 'file/student/27/thumb1169287815.png');
-
 -- --------------------------------------------------------
 
 --
@@ -149,19 +99,6 @@ CREATE TABLE IF NOT EXISTS `img_thumb_teacher` (
   `image_asli` varchar(100) DEFAULT NULL,
   `image_thumb` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
-
---
--- Dumping data for table `img_thumb_teacher`
---
-
-INSERT INTO `img_thumb_teacher` (`id_image`, `image_asli`, `image_thumb`) VALUES
-(1, 'http://localhost/ci/RPL/ci_rpl/file/avatar3.png', 'file/avatar3.png'),
-(7, 'http://localhost/ci/RPL/ci_rpl/file/teacher/3/2014-04-29-124415.jpg', 'file/teacher/3/thumb1898283121.jpeg'),
-(8, 'http://localhost/ci/RPL/ci_rpl/file/teacher/1/2014-04-22-220535.jpg', 'file/teacher/1/thumb1598006707.jpeg'),
-(9, 'http://localhost/ci/RPL/ci_rpl/file/teacher/5/2014-04-22-220535.jpg', 'file/teacher/5/thumb120504545.jpeg'),
-(10, 'http://localhost/ci/RPL/ci_rpl/file/teacher/3/2014-04-22-220535.jpg', 'file/teacher/3/thumb395167516.jpeg'),
-(11, 'http://localhost/ci/RPL/ci_rpl/file/teacher/6/avatar04.png', 'file/teacher/6/thumb1595898321.png'),
-(12, 'http://localhost/ci/RPL/ci_rpl/file/teacher/6/fossil-workshop.jpg', 'file/teacher/6/thumb738616769.jpeg');
 
 -- --------------------------------------------------------
 
@@ -186,15 +123,6 @@ CREATE TABLE IF NOT EXISTS `kelas` (
   `nama_kelas` varchar(100) DEFAULT NULL,
   `deskripsi` text
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
-
---
--- Dumping data for table `kelas`
---
-
-INSERT INTO `kelas` (`id_kelas`, `nama_kelas`, `deskripsi`) VALUES
-(1, 'IPA', 'mata pelajaran ipa sma secara umum,,,'),
-(2, 'IPS', 'mata pelajaran ips'),
-(3, 'MTK', 'mata pelajaran matematika,');
 
 -- --------------------------------------------------------
 
@@ -255,14 +183,6 @@ CREATE TABLE IF NOT EXISTS `mata_pelajaran` (
   `style` varchar(100) DEFAULT 'bg-maroon'
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
---
--- Dumping data for table `mata_pelajaran`
---
-
-INSERT INTO `mata_pelajaran` (`id_mata_pelajaran`, `nama_mapel`, `deskripsi_mapel`, `id_guru`, `id_kelas`, `style`) VALUES
-(7, 'fisika 1', '', 6, 1, 'bg-maroon'),
-(8, 'Matematika', 'matematika diskrit', 6, 3, 'bg-green');
-
 -- --------------------------------------------------------
 
 --
@@ -286,14 +206,6 @@ CREATE TABLE IF NOT EXISTS `siswa_mapel` (
   `id_mata_pelajaran` int(11) DEFAULT NULL,
   `id_student` int(11) DEFAULT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
-
---
--- Dumping data for table `siswa_mapel`
---
-
-INSERT INTO `siswa_mapel` (`id_siswa_mapel`, `id_mata_pelajaran`, `id_student`) VALUES
-(12, 7, 27),
-(13, 8, 27);
 
 -- --------------------------------------------------------
 
@@ -326,13 +238,6 @@ CREATE TABLE IF NOT EXISTS `student` (
   `id_image` int(11) DEFAULT '20'
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
 
---
--- Dumping data for table `student`
---
-
-INSERT INTO `student` (`id_student`, `nama_lengkap`, `email`, `password`, `ttl`, `jenis_kelamin`, `kelas`, `no_phone`, `alamat`, `deskripsi`, `id_image`) VALUES
-(27, 'andrihost', 'andrihost@gmail.com', '12345678', '0000-00-00', 'female', '1', '085271443804', '', '', 34);
-
 -- --------------------------------------------------------
 
 --
@@ -354,13 +259,6 @@ CREATE TABLE IF NOT EXISTS `teacher` (
   `deskripsi` text,
   `id_image` int(11) DEFAULT '1'
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
-
---
--- Dumping data for table `teacher`
---
-
-INSERT INTO `teacher` (`id_guru`, `nama_lengkap`, `email`, `password`, `ttl`, `jenis_kelamin`, `gambar`, `id_kelas`, `pendidikan_terakhir`, `no_phone`, `alamat`, `deskripsi`, `id_image`) VALUES
-(6, 'eandriyas efendi', 'eandriyas@gmail.com', '12345678', '1901-01-02', 'male', NULL, 1, '1', '085271443804', '', '', 12);
 
 -- --------------------------------------------------------
 
@@ -387,13 +285,6 @@ CREATE TABLE IF NOT EXISTS `temp_teacher` (
   `password` varchar(255) DEFAULT NULL,
   `key` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
-
---
--- Dumping data for table `temp_teacher`
---
-
-INSERT INTO `temp_teacher` (`idtemp_teacher`, `email`, `password`, `key`) VALUES
-(1, 'indra@gmail.com', 'indraadmin', 'a94c846947c140ed71bd46847a0173ef');
 
 --
 -- Indexes for dumped tables
