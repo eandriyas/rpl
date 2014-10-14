@@ -1,7 +1,7 @@
-rpl
+rpl (rekayasa perangkat lunak)
 ===
 
-final project rpl
+final project rpl (rekayasa perangkat lunak)
 
 merupakan file project kuliah rekayasa perangkat lunak,,
 aplikasi ini merupakan aplikasi e-learning yang bisa digunakan untuk semacam kursus online
